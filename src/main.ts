@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 
 
 try {
-  const url = 'https://www.dyson.co.kr/40mm-airwrap-long-barrel-iron-fuchsia';
+  const url = 'https://www.dyson.co.kr/30mm-airwrap-long-barrel-iron-fuchsia';
   const html = await axios.get(url);
   const el =  new JSDOM(html.data);
   const selector = '#maincontent > div > div.column.main > div.hero.hero--product-variant > div.hero__body.hero__body--inline--g > div > div > div > div.hero__content.hero__content--bottomer--g.hero__content--66pc--gt.hero__content--33pc--gtw > div > em';
@@ -28,7 +28,7 @@ try {
       // 수신자 메일
       to: ['dhtjstlr777@gmail.com', 'dlrkdla4@naver.com'],
       // 보내는 메일 제목
-      subject: '40mm 에어랩™ 롱 배럴(아이언/푸시아) 입고!!!',
+      subject: '30mm 에어랩™ 롱 배럴(아이언/푸시아) 입고!!!',
       // 보내는 메일의 내용을 입력
       // text: 일반 text로 작성된 내용
       // html: html로 작성된 내용
@@ -36,7 +36,7 @@ try {
     });
   }
 } catch(e) {
-  const url = 'https://www.dyson.co.kr/40mm-airwrap-long-barrel-iron-fuchsia';
+  const url = 'https://www.dyson.co.kr/30mm-airwrap-long-barrel-iron-fuchsia';
 
   const transporter = nodemailer.createTransport({
   service: 'gmail',
